@@ -1,5 +1,6 @@
 const Http = new XMLHttpRequest();
-const url = "http://localhost:3000/articles";
+// const url = "http://localhost:3000/articles"; // local server
+const url = "http://52.79.152.207:3000/articles"; // use deployed server
 Http.open("GET", url);
 Http.send();
 Http.onreadystatechange = e => {
